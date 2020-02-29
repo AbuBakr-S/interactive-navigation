@@ -9,7 +9,7 @@
 //  Ensure the DOM has fully loaded and parsed
 
 // Remember this doesn't wait for CSS!
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
 
     //  Add all section sames to navigation, including future added sections with set data-nav attribute
     const buildNav = () => {
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         for (const section of sections) {
             const sectionName = section.dataset.nav;    // Returns [data-nav] value from Section Element
-            const anchor = `section${counter}`;
+            const anchor = `section${counter}`;     // Manipulate String to match href
             counter ++;
 
             navbarList.innerHTML += `<li><a href="#${anchor}">${sectionName}</a></li>`;
@@ -32,4 +32,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     buildNav();
 
 });
+
+
 

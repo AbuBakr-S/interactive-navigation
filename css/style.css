@@ -27,6 +27,10 @@ section {
     max-width: 50%;
 }
 
+.active-class {
+    border: solid 1px red;
+}
+
 footer {
     text-align: center;
 }
