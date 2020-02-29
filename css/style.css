@@ -1,0 +1,17 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main__hero {
+    margin-top: 5em;
+    text-align: center;
+}
+
+section {
+    margin: 0 auto 10em auto;
+    max-width: 50%;
+}
+
+footer {
+    text-align: center;
+}
