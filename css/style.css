@@ -23,7 +23,8 @@ body {
 }
 
 section {
-    margin: 0 auto 10em auto;
+    margin: 0 auto 30% auto;
+    height: 30em;
     max-width: 50%;
     padding: 2em;
 }

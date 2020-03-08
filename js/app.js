@@ -36,8 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const options = {
     root: null,   // This is the viewport
-    threshold: 0.9,   // 0 value will fire for any part of the target. 1 value will fire if 100% of the target is visible inside the viewport  
-    rootMargin: "0px"
+    threshold: 1,   // 0 value will fire for any part of the target. 1 value will fire if 100% of the target is visible inside the viewport  
+    rootMargin: "10% 0px 10% 0px"
     };
 
     const observer = new IntersectionObserver(function(entries, observer) {
